@@ -9,10 +9,10 @@ body{
 
 .section1{
   border: 5px solid #43E5E9;
+  min-width: 100vh;
   min-height: 70pc;
   color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  min-width: 100vh;
 }
 p{
     color: rgb(7, 92, 133);
@@ -93,6 +93,7 @@ li:hover{
   top: 35px;
   font-size: 25px;
 }
+
 .activo{
   width: 130px;
   height: 70px;
@@ -169,6 +170,7 @@ button:hover{
   right: 20px;  
 }
 .img_1--{
+  
   position:  relative;
   margin: 10px;
   width: 300px;
@@ -229,6 +231,7 @@ button:hover{
   scroll-snap-align: center;
 }
 
+ 
 .all{
   color: #43E5E9;
   margin-top: 10px;
