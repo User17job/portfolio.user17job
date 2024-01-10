@@ -26,7 +26,7 @@ body{
     z-index: 4;
 
 }
-.icons2{
+.icons11{
     position: absolute;
     width: 270px;
     height: 225px;
@@ -291,10 +291,9 @@ h2{
     padding: 10px;
     color: #43E5E9;
 }
-
 .section2__title{
-    width: 250px;
-    height: 65px;
+    width: 250px;/*250*/
+    height: 65px;/*65*/
     margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -305,7 +304,7 @@ h2{
 }
 .section2__slide{
     margin: auto;
-    background: #fff;
+    background:  #43E5E9;
     width: 400px;
     position: relative;
     display: flex;
@@ -319,6 +318,11 @@ h2{
     object-fit: cover;
     border-radius: 5px;
     scroll-snap-align: center;
+    background:  #43e6e900;
+}
+
+.icons2{
+ background-color: #43E5E9;
 }
 
 /* 3 */
@@ -329,6 +333,88 @@ h2{
     min-height: 70pc;
     padding: 10px;
     margin: 0;
+}
+.section3__div-knows{
+    display: grid;
+    gap: 10px;
+    width: 98%;
+    background-color: #43e6e958;
+    height: 400px;
+    padding: 20px;
+    grid-template-columns: repeat(5, 2fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "a a a a d"
+    "b b c c c"
+    "e e e f f";
+}
+.__div-knows{
+    background-color: rgb(6, 238, 255);
+    border: 3px solid ;
+    border-radius: 10px;
+    padding: 25px;
+    height: 50px;
+    text-align: center;
+    overflow: hidden;
+    font-size:25px ;
+}
+.__div-knows:nth-child(1){
+    background-color: #ff480000;
+    grid-area: a;
+    transition: 2s;
+}
+.__div-knows:nth-child(1):hover{
+    background-color: #ff4800;
+} 
+.__div-knows:nth-child(2){
+    grid-area: b;
+    background-color:  #0e75db00;
+    transition: 2s;
+}
+.__div-knows:nth-child(2):hover{
+    background-color:  #0e74db;
+    
+}
+.__div-knows:nth-child(3){
+    background-color: #43e6e987;
+    grid-area: c;
+}
+.__div-knows:nth-child(4){
+    background-color: #43b7e9;
+    grid-area: d;
+}
+.__div-knows:nth-child(5){
+    background-color: #43e96f;
+    grid-area: e;
+}
+.__div-knows:nth-child(6){
+    background-color: #cc17e0;
+    grid-area: f;
+}
+
+.sss{
+    opacity: 100%;
+}
+.html{
+    position: relative;
+    top: 10px; 
+    opacity: 0;
+    transition: 2s;
+}
+.css{
+    position: relative;
+    left: 300px;
+    top: -65px; 
+    opacity: 0;
+    transition: 2s;
+}
+.__div-knows:nth-child(1):hover .html{
+    opacity: 100%;
+    top: -65px; 
+}
+.__div-knows:nth-child(2):hover .css{
+    left: 0px;
+    opacity: 100%;
 }
 
 
