@@ -104,8 +104,6 @@ body{
         transform: rotate(360deg);
     }
 }  
-
-
 .ico{
     width: 75px;
     height: 75px;
@@ -320,12 +318,11 @@ h2{
     scroll-snap-align: center;
     background:  #43e6e900;
 }
-
 .icons2{
  background-color: #43E5E9;
 }
-
 /* 3 */
+/* layOut */
 .section3{
     border: 5px solid #43E5E9;
     color: #43E5E9;
@@ -334,6 +331,30 @@ h2{
     padding: 10px;
     margin: 0;
 }
+.section3__div-title{
+    font-size: 40px;
+    margin: auto;
+    background-color: #0975a700;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+    top: 20px;
+    bottom: 20px;
+    position: relative;
+    top: 0px;
+    font-weight: 570;
+}
+.section3__div-p{
+    font-size: 20px;
+    width: 650px;
+    height: 35px;
+    padding:5px;
+    margin: auto;
+    position: relative;
+
+}
+
 .section3__div-knows{
     display: grid;
     gap: 10px;
@@ -344,9 +365,10 @@ h2{
     grid-template-columns: repeat(5, 2fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
-    "a a a a d"
-    "b b c c c"
-    "e e e f f";
+    "a a c d d"
+    "b b c e e"
+    "f f h g g"
+    ;
 }
 .__div-knows{
     background-color: rgb(6, 238, 255);
@@ -376,30 +398,66 @@ h2{
     
 }
 .__div-knows:nth-child(3){
-    background-color: #43e6e987;
+    background-color: #43e6e900;
+    height: 230px;
     grid-area: c;
+    transition: 2s;
+}
+.__div-knows:nth-child(3):hover{
+    background-color: rgb(255, 255, 5);
 }
 .__div-knows:nth-child(4){
-    background-color: #43b7e9;
+    background-color: #43b7e900;
     grid-area: d;
+    transition: 2s;
+}
+.__div-knows:nth-child(4):hover{
+    background-color: #180f1f;
 }
 .__div-knows:nth-child(5){
-    background-color: #43e96f;
+    background-color: #43e96f00;
     grid-area: e;
+    transition: 2s;
+}
+.__div-knows:nth-child(5):hover{
+    background-color: orange;
 }
 .__div-knows:nth-child(6){
-    background-color: #cc17e0;
+    background-color: #cc17e000;
     grid-area: f;
+    transition: 2s;
 }
-
+.__div-knows:nth-child(6):hover{
+    background-color: rgb(255, 213, 0);
+}
+.__div-knows:nth-child(7){
+    background-color: #1dfff000;
+    grid-area: g;
+    transition: 2s;
+}
+.__div-knows:nth-child(7):hover{
+    background-color: #0975a7;
+}
+.__div-knows:nth-child(8){
+    background-color: #1dfff000;
+    grid-area: h;
+    transition: 2s;
+}
+.__div-knows:nth-child(8):hover{
+    background-color:palevioletred ;
+}
+/*  */
 .sss{
     opacity: 100%;
+    width: 140px;
+    height: 140px;
 }
 .html{
     position: relative;
     top: 10px; 
     opacity: 0;
     transition: 2s;
+    margin: auto;
 }
 .css{
     position: relative;
@@ -408,15 +466,104 @@ h2{
     opacity: 0;
     transition: 2s;
 }
+.js{
+    position: relative;
+    left: 210px;
+    opacity: 0;
+    transition: 2s;
+}
+.git{
+    position: relative;
+    top: -190px;
+    opacity: 0;
+    transition: 2s;
+    margin: auto;
+}
+.gitb{
+    position: relative;
+    top: -73px;
+    right: 145px;
+    opacity: 0;
+    transition: 2s;
+   
+}
+.json{
+    position: relative;
+    top: -75px; 
+    opacity: 0;
+    transition: 2s;
+    margin: auto;
+    transform: scale(3);
+}
+.ajax{
+    position: relative;
+    top: -100px; 
+    left: 0px;
+    opacity: 40;
+    transition: 2s;
+    margin: auto;
+  transform: scale(0);
+}
+#sasa{
+  /* width: 140px;
+  height: 40px; */
+  transform: scale(0.4);
+}
+.sass{
+    position: relative;
+    top: -138px; 
+    left: -148px;
+    opacity: 0;
+    transition: 2s;
+    margin: auto;
+    transform: rotate(45deg);
+}
+
 .__div-knows:nth-child(1):hover .html{
     opacity: 100%;
     top: -65px; 
 }
 .__div-knows:nth-child(2):hover .css{
-    left: 0px;
+    left: 140px;
     opacity: 100%;
 }
+.__div-knows:nth-child(3):hover .js{
+    left: 0px;
+    opacity:100%;
+    animation: jsMove 3s linear infinite;
+}
+.__div-knows:nth-child(4):hover .git{
+    top: -75px;
+    opacity: 100%;
 
+}
+.__div-knows:nth-child(5):hover .gitb{
+    right: -135px;
+    opacity: 100%;
+}
+.__div-knows:nth-child(6):hover .json{
+    opacity: 100%;
+    transform: scale(0.9);
+}
+.__div-knows:nth-child(7):hover .ajax{
+    opacity: 100%;
+    transform: scale(0.5);
+}
+.__div-knows:nth-child(8):hover .sass{
+    opacity: 100%;
+    transform: rotate(0deg);
+}
+
+
+@keyframes jsMove {
+    0%{
+        transform: translate(5px, 0px );
+    }50%{
+        transform: translate(-5px, 0px);
+    }100%{
+        transform: translate(5px, 0px);
+    }
+}
 
 /* 4 */
 .section4{
