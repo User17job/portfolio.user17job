@@ -7,6 +7,8 @@ let js = document.getElementById("objeto2");
 let gith = document.getElementById("objeto2");
 let gitt = document.getElementById("objeto2");
  */
+
+alert("actully in process")
 window.sr = ScrollReveal();
   sr.reveal('.section1', {
     duration: 1000,
@@ -33,6 +35,10 @@ window.sr = ScrollReveal();
    sr.reveal('#footer', {
      duration: 6000,
      origin:'top',
+     distance: '-100px'
+   });
+   sr.reveal('.div--content-imgs', {
+     duration: 2000,
      distance: '-100px'
    });
 
