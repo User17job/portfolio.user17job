@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 4;
     position: fixed;
     top: 560px;
-    left: 95vw;
+    left: 94vw;
     width: 0;
     height: 0;
     border-left: 30px solid transparent;
@@ -1029,17 +1029,17 @@ a:hover{
     }  
     body{
         background-color: #000000;
-        min-width: 25%;
+        min-width: 100vh;
         overflow-x: hidden;
     }
     .down, .up{
         display: none;
     }
     .section1{
-    overflow: hidden;
+    
     border: 5px solid #43E5E9;
     color: #43E5E9;
-    width: 50%;
+    width: 100%;
     min-height: 130pc;
     padding: 10px;
     margin: 0;
@@ -1181,8 +1181,6 @@ a:hover{
     /*  */
     .section2{
         width: 50%;
-    overflow: hidden;
-
     }
     .section2__slide{
         width: 350px;
@@ -1201,8 +1199,6 @@ a:hover{
         min-height: 50pc;
         padding: 10px;
         margin: 0;
-    overflow: hidden;
-
     }
     .section3__div-title{
         font-size: 35px;
