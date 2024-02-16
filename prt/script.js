@@ -39,7 +39,7 @@ let btnDown = document.querySelector('.down')
 btnDown.addEventListener('click', function(){
    window.scrollBy({top:500, behavior: "smooth"})
 });
-/*
+
 
 // Obtener el elemento div
 const move = document.getElementById("move");
@@ -91,6 +91,4 @@ document.addEventListener("mousemove", continuarArrastre);
 document.addEventListener("mouseup", terminarArrastre);
 
 
-
-*/
 

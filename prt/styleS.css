@@ -285,8 +285,11 @@ h2{
     transition: 1s;
 }
 .div--content-div:hover{
+    color: rgb(255, 255, 255);
     transform: scale(1.3);
-    cursor:grab;
+    cursor:grab;  
+    font-size: 0px;
+    
 }
 .d3{
     width: 400px;
@@ -368,9 +371,10 @@ h2{
     display: flex;
     overflow: scroll;
     scroll-snap-type: x mandatory;
+    overflow-y: hidden;
 }
 .slide__img{
-    width: 100%;
+    width: 150%;
     left: 0;
     position: sticky;
     object-fit: cover;
@@ -384,7 +388,7 @@ h2{
 .cuatro{
     position: absolute;
     top: 10px;
-    left: 33%;
+    left: 26%;
     transform: rotate(180deg) ;
     animation: astro 10s linear infinite;
 }
@@ -410,10 +414,10 @@ h2{
         transform: translate(0px, 0px);
     }
     30%{
-        transform: translate(500%, 0px);
+        transform: translate(550%, 0px);
     }
     61%{
-        transform: translate(500%, 150%);
+        transform: translate(560%, 150%);
     }
     90%{
         transform: translate(0px , 150%) ;
@@ -490,7 +494,7 @@ h2{
     display: grid;
     gap: 10px;
     width: 97%;
-    background-color: #43e6e91f;
+    background-color: #43e6e900;
     height: 400px;
     padding: 20px;
     grid-template-columns: repeat(5, 2fr);
@@ -502,7 +506,7 @@ h2{
     ;
 }
 .__div-knows{
-    background-color: rgb(6, 238, 255);
+    background-color: rgba(6, 238, 255, 0);
     border: 3px solid ;
     border-radius: 10px;
     padding: 25px;
@@ -1036,40 +1040,44 @@ a:hover{
         display: none;
     }
     .section1{
-    
-    border: 5px solid #43E5E9;
-    color: #43E5E9;
-    width: 100%;
-    min-height: 130pc;
-    padding: 10px;
-    margin: 0;
+        border: 5px solid #43E5E9;
+        color: #43E5E9;
+        width: 100%;
+        min-height: 150pc;
+        padding: 20px;
+        margin: 0;
     }.section__nav{
         background-color: #43E5E9;
-        width: 89%;
+        width: 95%;
         padding: 20px;
-        height: 40px;
+        height: 50px;
         z-index: 1;
         position: relative;
     }
     .nav__name{
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 600;
-        color: rgb(7, 85, 133);
+        color: rgb(8, 103, 161);
     }
     .icons1, .icons11{
         animation: none;
     }
+    .icons11>.ico{
+        width: 150px;
+        height: 150px;
+    }
     .uno{
-        left: -15%;
-        top: 550px;
+        left: 555px;
+        top: 900px;
     }
     .dos{
-        left: 27%;
+        left: 20vw;
         top: 500px;
     }
     .tres{
         position: relative;
-        left: -40%;
+        left: 170%;
+
     }
     .separacion{
         left: 65%;
@@ -1077,26 +1085,27 @@ a:hover{
         height: 60px;
     }
     #active{
-        width: 140px;
-        height: 65px;
-        font-size: 45px;
-        left:50%;
+        width: 250px;
+        height: 120px;
+        font-size: 75px;
+        left:120%;
         top: 777px;
-        padding: 10px;
+        padding: 20px;
     }
     .content > a {
         position: relative;
         color: rgb(7, 85, 133);
-        font-size: 25px;
-        top: -35px;
-        left:25%;
+        font-size: 35px;
+        top: -55px;
+        left:11vh;
         z-index: 3;
     }
     .content > .nav--div{
-        width: 200px;
+        width: 400px;
         z-index: 1;
-        margin-left: 40px;
         position: absolute;
+        left: 300px;
+        height: 320px;
     }
     .content, .nav__div, ul{
         padding: 0%;
@@ -1106,26 +1115,27 @@ a:hover{
         left: 110px;
         z-index: 3;
         top: 10px;
-        width: 180px;
-        height: 200px;
+        width: 90%;
+        height: 350px;
         z-index: 3;
     }
     li{
         list-style: none;
         background-color: rgb(7, 85, 133);
         margin-top: 5px;
-        height: 20px;
-        width: 95%;
-        margin-left: -95px;
+        height: 50px;
+        width: 98%;
+        padding: 5px;
+        margin-left: -90px; 
         border-radius: 10px;
-        font-size: 25px;
+        font-size: 35px;
         text-align: center;
         padding-bottom: 15px;
         z-index: 3;
     }
     h2{
         text-shadow: 3px 5px 5px rgb(66, 129, 211);
-        font-size: 50px;
+        font-size: 100px;
         margin: 0;
         position: relative;
         left: -20px;
@@ -1135,73 +1145,130 @@ a:hover{
         display: none;
     }
     .div--content-p1{
-        font-size: 35px;
+        font-size: 60px;
         margin-left: -20px;
     }
     .div--content-p2, p{
         margin-left: -20px;
+        font-size: 35px;
+    }
+    .div--content-div{
+        width: 235px;
+        font-size: 25px;
+        height: 55px;
+        text-align: center;
     }
     .seccion1__div--conent{
         width: 480px;
         height: 600px;
         background-color: rgba(230, 238, 245, 0);
-       
     }
     .comment{
         position: relative;
-        top: 800px;
+        top: 1000px;
         left: -425px;
         background-color: rgba(230, 238, 245, 0);
-        width: 300px;
+        width: 350px;
         height: 250px;
     }
     .imgs-1{
-        width: 170px;
-        height: 170px;
+        width: 320px;
+        height: 320px;
         border-radius: 50%;
-        left: -10px;
+        left: 70vw;
+        top: -200px;
         box-shadow: 1px 1px 5px white;
     }
     .imgs-2{
-        width: 180px;
-        height: 180px;
+        width: 350px;
+        height: 350px;
         border-radius: 50%;
-        left: -180px;
-        top: 200px;
+        left: -50vw;
+        top: 385px;
         box-shadow: 1px 1px 5px white;
     }
     .imgs-3{
-        width: 190px;
-        height: 190px;
+        width: 420px;
+        height: 420px;
         border-radius: 50%;
-        left: -40px;
-        top: 450px;
+        left: 50vw;
+        top: 650px;
         box-shadow: 1px 1px 5px white;
     }
     /*  */
     .section2{
-        width: 50%;
+        width: 100%;
+        padding: 20px;
+        min-height: 80pc;
+    }
+    .section2__title{
+        font-size: 70px;
+        margin-top: 10px;
     }
     .section2__slide{
-        width: 350px;
+        width: 70%;
+        height: 1050px;
+        position: absolute;
+        top: 190px;
+        left: 30vw;
+        transform: scale(1.);
+        border-radius: 15px;
+    }
+    .slide__img{
+        width: 650px;
+        height:1050px;
+        left: 0;
+        margin-left: 15px;
         position: relative;
-        top: -85px;
+        border-radius: 15px;
+        background:  #00817405;
     }
     .icons2 > .ico{
-        width: 40px;
-        height: 40px;
+        width: 90px;
+        height: 90px;
+    }
+    .seis{
+        position: absolute;
+        top: 300px;
+        left: 5vh;
+        animation: carrito 13s linear infinite; 
+    
+    }
+    .siete{
+        position: absolute;
+        top: 60px;
+        left: 80vh;
+        animation:  catorceM 2s linear infinite;
+    }
+    .ochob{
+        position: absolute;
+        top: 100px;
+        left: 5vh;
+        z-index: 0;
+    }
+    .ochod{
+        position: absolute;
+        top: 1200px;
+        left: 85vh;
+        animation:eraAnimacion 8s linear infinite;
+    }
+    .ochoe{
+        position: absolute;
+        top: 850px;
+        left: 5vh;
+        animation: tresS 8s linear infinite;
     }
     /*  */
     .section3{
         border: 5px solid #43E5E9;
         color: #43E5E9;
-        width: 50%;
-        min-height: 50pc;
-        padding: 10px;
+        width: 100%;
+        min-height: 120pc;
+        padding: 20px;
         margin: 0;
     }
     .section3__div-title{
-        font-size: 35px;
+        font-size: 65px;
         margin: auto;
         background-color: #0975a700;
         width: 50%;
@@ -1210,41 +1277,49 @@ a:hover{
         text-align: center;
     }
     .section3__div-p{
-        font-size: 20px;
+        font-size: 40px;
         width: 650px;
         height: 35px;
         top: -40px;
         padding:5px;
         margin: auto;
         position: relative;
-    
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
     .nueve{
-        width: 75px;
-        height: 75px;
+        width: 125px;
+        height: 125px;
+        background-color: #0e75db00;
         animation: okey 4s linear infinite;
+        margin-left: 60vh; 
     }
     .diez{
-        width: 75px;
-        height: 75px;
+        width: 175px;
+        height: 175px;
         animation: okey 4s linear infinite;
     }
     .once{
-        width: 75px;
-        height: 75px;
+        width: 125px;
+        height: 125px;
         animation: okey 4s linear infinite;
+        background-color: #0e75db00;
+        margin-left: -80vh;
     }
     .section3__div-knows{
-        background-color: #7a4e4e00;
-        width: 88%;
+        background-color: #7a4e4ea0;
+        width: 90%;
         display: flex;
+        margin: auto;
         justify-content: space-around;
         flex-direction: column;
-        height: 600px;
+        height: 1300px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
     .sss{
-        width: 75px;
-        height: 75px;
+        width: 80px;
+        height: 80px;
         margin: 10px;
         animation: none;
     }
@@ -1253,19 +1328,14 @@ a:hover{
             transform: scale(1);
         }
     }
- 
     .section3__div-p{
         width: 90%;
         text-align: center;
-    }
-    .sss{
-        width: 50px;
-        height: 50px;
+        font-size: 40px;
     }
     .__div-knows:nth-child(3){
         background-color: #43e6e900;
-        height: 230px;
-        grid-area: c;
+        height: 70px;  
         transition: 2s;
     }
     .__div-knows:nth-child(3):hover{
@@ -1273,7 +1343,6 @@ a:hover{
     }
     .__div-knows:nth-child(4){
         background-color: #43b7e900;
-        grid-area: d;
         transition: 2s;
     }
     .__div-knows:nth-child(4):hover{
@@ -1281,15 +1350,13 @@ a:hover{
     }
     .__div-knows:nth-child(5){
         background-color: #43e96f00;
-        grid-area: e;
         transition: 2s;
     }
     .__div-knows:nth-child(5):hover{
         background-color: orange;
     }
     .__div-knows:nth-child(6){
-        background-color: #cc17e000;
-        grid-area: f;
+        background-color: #cc17e000;        
         transition: 2s;
     }
     .__div-knows:nth-child(6):hover{
@@ -1297,7 +1364,6 @@ a:hover{
     }
     .__div-knows:nth-child(7){
         background-color: #1dfff000;
-        grid-area: g;
         transition: 2s;
     }
     .__div-knows:nth-child(7):hover{
@@ -1305,11 +1371,38 @@ a:hover{
     }
     .__div-knows:nth-child(8){
         background-color: #1dfff000;
-        grid-area: h;
         transition: 2s;
     }
     .__div-knows:nth-child(8):hover{
         background-color:palevioletred ;
+    }
+    .__div-knows{
+        height: 70px;
+    }
+    .willknows-{
+        height: 40%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .__div-willknows{
+        width: 45vh;
+        height: 50px;
+        margin: auto;
+        font-size: 50px;
+        text-align: center;
+        padding: 20px;
+    }
+    ._div-willknows{
+        width: 95%;
+        background-color: #1dfff021;
+        margin: auto;
+        border-radius: 2px;
+        font: 600;
+        margin-top: 20px;
+        padding: 15px;
+        font-size: 15px;
+        display: flex ;
+        justify-content: space-around;
     }
     /*  
     .sss{
@@ -1381,58 +1474,60 @@ a:hover{
         margin: auto;
         transform: rotate(45deg);
     }
-      */
+      
+    
+        color: rgb(131, 49, 49);
+    background-color: #0975a7;*/
     .__div-knows:nth-child(1):hover .html{
         opacity: 100%;
-        top: -75px; 
+        top: -60px; 
         animation: none;
-        transform: scale(0.5);
+        transform: scale(1);
     }
     .__div-knows:nth-child(2):hover .css{
         left: 140px;
         opacity: 100%;
-        top: -90px; 
+        top: -80px; 
         animation:none;
-        transform: scale(0.5);
+        transform: scale(1);
     }
     .__div-knows:nth-child(3):hover .js{
-        left: -40px;
+        left: -30px;
         opacity:100%;
         animation:none;
-        transform: scale(0.5);
+        /* transform: scale(0.5); */
     }
     .__div-knows:nth-child(4):hover .git{
-        top: -80px;
+        top: -70px;
         opacity: 100%;
         animation:none;
-        transform: scale(0.5);
+        /* transform: scale(0.5); */
     }
     .__div-knows:nth-child(5):hover .gitb{
         opacity: 100%;
         animation: none;
-        left: 180px;
-        transform: scale(0.5);
+        left: 100px;
+        transform: scale(1);
     }
     .__div-knows:nth-child(6):hover .json{
         opacity: 100%;
-        transform: scale(0.5);
+        transform: scale(1);
     }
     .__div-knows:nth-child(7):hover .ajax{
         opacity: 100%;
-        transform: scale(0.3);
+        transform: scale(0.55);
         animation:none;
     }
     .__div-knows:nth-child(8):hover .sass{
         opacity: 100%;
-        top: -100px; 
-        left: -170px;
-        transform: scale(0.4);
-        
+        top: -135px; 
+        left: 0px;
+        transform:rotate(360deg);
     }
     /*  */
     .html{
         position: relative;
-        top: 10px; 
+        top: 100px; 
         left: 35%;
         opacity: 100%;
         transition: 2s;
@@ -1441,14 +1536,14 @@ a:hover{
     .css{
         position: relative;
         left: 300px;
-        top: -110px; 
+        top: -210px; 
         opacity: 100%;
         transition: 2s;
     }
     .js{
         position: relative;
-        left: 275px;
-        opacity: 100%;
+        left: 575px;
+        opacity: 0%;
         transition: 2s;
         top: -70px;
         background-color: transparent;
@@ -1463,18 +1558,18 @@ a:hover{
     }
     .gitb{
         position: relative;
-        top: -85px;
+        top: -80px;
         transform: scale(0.5);
         right: 35px;
         opacity: 0%;
-        transition: 2s;
+        transition: 1s;
     }
     .json{
         position: relative;
-        top: -80px;
-        right: 90px; 
+        top: -70px;
+        right: 120px; 
         opacity: 0%;
-        transition: 2s;
+        transition: 1s;
         margin: auto;
         transform: scale(0.5);
     }
@@ -1497,43 +1592,46 @@ a:hover{
         opacity: 0%;
         transition: 1s;
         margin: auto;
-        transform: scale(0.4);
+        transform: rotate(-360deg);
     }
     .p-ddiv{
         width: 90%;
         height: 75px;
-        margin-left:10px;
+        margin-left:30px;
         text-align: center;
+        font-size: 35px;
     }
     /*  */
     .section4{
     overflow: hidden;
-        width: 50%;
+        width: 100%;
+        padding: 20px;
     }
     .sectio4__about{
         font-size: 40px;
         left: 20px;
     }
     ._about--photo, .foto{
-        width: 150px;
+         width: 150px;
         height: 165px;
     }
     ._about--paragraph{
         width: 323px;
-        position: relative;
-        top: 40px;
-        left: 20px;
+  position: relative;
+           top: 40px;
+          left: 20px;
     }
     .icons5{
         position: relative;
-        top: 50px;
+                 top: 50px;
     }
 
     /*  */
     #footer{
     overflow: hidden;
-        width: 50%;  
-        height: 600px; 
+        width: 100vh;
+       padding: 20px;  
+       height: 600px; 
     }
     .__bio-p{
         font-size:20px ;
