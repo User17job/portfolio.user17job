@@ -1,47 +1,36 @@
-/*
-// Seleccionar los elementos
-let objeto1 = document.getElementById("objeto1");
-let html = document.getElementById("objeto2");
-let css = document.getElementById("objeto2");
-let js = document.getElementById("objeto2");
-let gith = document.getElementById("objeto2");
-let gitt = document.getElementById("objeto2");
- */
-
 // alert("actully in process");
 window.sr = ScrollReveal();
-  sr.reveal('.section1', {
+sr.reveal('.section1', {
     duration: 1000,
-  });
-   sr.reveal('.section__nav', {
+});
+sr.reveal('.section__nav', {
      duration: 2000,
      origin:'bottom',
      distance: '-100px'
-   });
-   sr.reveal('.section2', {
+});
+sr.reveal('.section2', {
      duration: 2000,
      origin:'left',
      distance: '-100px'
-   });
-   sr.reveal('.section3', {
+});
+sr.reveal('.section3', {
      duration: 2000,
      origin:'right',
      distance: '-100px'
-   });
-   sr.reveal('.section4', {
+});
+sr.reveal('.section4', {
      duration: 2000,
      distance: '-100px'
-   });
-   sr.reveal('#footer', {
+});
+sr.reveal('#footer', {
      duration: 2000,
      origin:'top',
      distance: '-100px'
-   });
-   sr.reveal('.div--content-imgs', {
+});
+sr.reveal('.div--content-imgs', {
      duration: 2000,
      distance: '-50px'
-   });
-
+});
 let btnUp = document.querySelector('.up')   
 btnUp.addEventListener('click', function(){
    window.scrollBy({top:-500, behavior: "smooth"})
@@ -51,76 +40,57 @@ btnDown.addEventListener('click', function(){
    window.scrollBy({top:500, behavior: "smooth"})
 });
 /*
-const carrito = document.querySelector('.cinco').animate(
-  [
-   { top: "0px", left: "0px" },    
-   { top: "0px", left: "300px" },
-   // El segundo movimiento hacia abajo
-   { top: "300px", left: "300px" },
-   // El tercer movimiento hacia la izquierda
-   { top: "300px", left: "0px" },
-   // El cuarto movimiento hacia arriba
-   { top: "0px", left: "0px" }
-  ],
-  {
-    // La duración de la animación en milisegundos
-    duration: 4000,
-    // El retraso de la animación en milisegundos
-    delay: 1000,
-    // La dirección de la animación (normal, reverse, alternate o alternate-reverse)
-    direction:'normal',
-    // El número de iteraciones de la animación (un número positivo o "infinite")
-    iterations: 'infinite',
-    // La función de sincronización de la animación (linear, ease, ease-in, ease-out, ease-in-out o una función personalizada)
-    easing:"linear"
-  } 
-)
- 
+
+// Obtener el elemento div
+const move = document.getElementById("move");
+
+// Inicializar las variables para guardar la posición del mouse y del move
+let mouseX = 0;
+let mouseY = 0;
+let moveX = 0;
+let moveY = 0;
+
+// Indicar si el move está siendo arrastrado o no
+let arrastrando = false;
+
+// Función para manejar el evento mousedown
+function iniciarArrastre(e) {
+  // Obtener la posición actual del mouse y del move
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+  moveX = parseInt(move.style.left) || 0;
+  moveY = parseInt(move.style.top) || 0;
+
+  // Activar el arrastre
+  arrastrando = true;
+}
+
+// Función para manejar el evento mousemove
+function continuarArrastre(e) {
+  // Si el move está siendo arrastrado
+  if (arrastrando) {
+    // Calcular la diferencia entre la posición actual y la anterior del mouse
+    let dx = e.clientX - mouseX;
+    let dy = e.clientY - mouseY;
+
+    // Actualizar la posición del move sumando la diferencia
+    move.style.left = (moveX + dx) + "px";
+    move.style.top = (moveY + dy) + "px";
+  }
+}
+
+// Función para manejar el evento mouseup
+function terminarArrastre(e) {
+  // Desactivar el arrastre
+  arrastrando = false;
+}
+
+// Asignar las funciones a los eventos correspondientes
+move.addEventListener("mousedown", iniciarArrastre);
+document.addEventListener("mousemove", continuarArrastre);
+document.addEventListener("mouseup", terminarArrastre);
+
+
+
 */
-//
-//  function mover(){
-//   // alert('alo');
-  
-//   derecha();
-  
-//   function derecha(){
-//     carrito.style.transform = 'translate(200px, 0px)';
-//     carrito.style.transition ='2s';
-//   }
-
-//   abajo();
-
-//   function abajo(){
-//     carrito.style.transform = 'translate(200px, 50px)';
-//     carrito.style.transition ='2s';
-//   }
-
-//  } 
-
-//  setInterval(mover, 5000);
-
-
-// Obtener el elemento circulo del documento
- 
-
-// Definir los keyframes de la animación
-
-// Definir las opciones de la animación
- 
-
-// Llamar a la función animate sobre el elemento circulo con los keyframes y las opciones definidas
-// let opciones = {
-//   // La duración de la animación en milisegundos
-//   duration: 4000,
-//   // El retraso de la animación en milisegundos
-//   delay: 1000,
-//   // La dirección de la animación (normal, reverse, alternate o alternate-reverse)
-//   direction: "normal",
-//   // El número de iteraciones de la animación (un número positivo o "infinite")
-//   iterations: "infinite",
-//   // La función de sincronización de la animación (linear, ease, ease-in, ease-out, ease-in-out o una función personalizada)
-//   easing: "linear"
-// };
-
-
 

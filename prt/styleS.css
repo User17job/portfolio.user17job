@@ -1,11 +1,11 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     min-height: 5000px;
-    overflow-x: hidden; 
     min-width: 100vh;
     font-family: 'DotGothic16', sans-serif;
+    overflow-x: hidden; 
 } 
 body::-webkit-scrollbar {
     width: 15px;               /* width of the entire scrollbar */
@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 4;
     position: fixed;
     top: 560px;
-    left: 95%;
+    left: 95vw;
     width: 0;
     height: 0;
     border-left: 30px solid transparent;
@@ -50,7 +50,6 @@ body::-webkit-scrollbar-thumb {
 .up:hover{
     opacity: 100%;
 }
-
 /*  */
 .section1{
     border: 5px solid #43E5E9;
@@ -287,18 +286,17 @@ h2{
 }
 .div--content-div:hover{
     transform: scale(1.3);
-
+    cursor:grab;
 }
 .d3{
     width: 400px;
     height: 400px;
     padding: 5px;
     border-radius: 30px;
-    border:2px solid white ;
+    border:2px solid #43E5E9;
     position: absolute;
     top: 600px;
     left: 50%;
-    
 }
 .comment{
     position: relative;
@@ -520,6 +518,7 @@ h2{
 }
 .__div-knows:nth-child(1):hover{
     background-color: #ff4800;
+    cursor: crosshair;
 } 
 .__div-knows:nth-child(2){
     grid-area: b;
@@ -528,6 +527,7 @@ h2{
 }
 .__div-knows:nth-child(2):hover{
     background-color:  #0e74db; 
+    cursor: crosshair;
 }
 .__div-knows:nth-child(3){
     background-color: #43e6e900;
@@ -537,6 +537,7 @@ h2{
 }
 .__div-knows:nth-child(3):hover{
     background-color: rgb(255, 255, 5);
+    cursor: crosshair;
 }
 .__div-knows:nth-child(4){
     background-color: #43b7e900;
@@ -545,6 +546,7 @@ h2{
 }
 .__div-knows:nth-child(4):hover{
     background-color: #180f1f;
+    cursor: crosshair;
 }
 .__div-knows:nth-child(5){
     background-color: #43e96f00;
@@ -552,6 +554,7 @@ h2{
     transition: 2s;
 }
 .__div-knows:nth-child(5):hover{
+    cursor: crosshair;
     background-color: orange;
 }
 .__div-knows:nth-child(6){
@@ -561,6 +564,7 @@ h2{
 }
 .__div-knows:nth-child(6):hover{
     background-color: rgb(255, 213, 0);
+    cursor: crosshair;
 }
 .__div-knows:nth-child(7){
     background-color: #1dfff000;
@@ -569,6 +573,7 @@ h2{
 }
 .__div-knows:nth-child(7):hover{
     background-color: #0975a7;
+    cursor: crosshair;
 }
 .__div-knows:nth-child(8){
     background-color: #1dfff000;
@@ -577,6 +582,7 @@ h2{
 }
 .__div-knows:nth-child(8):hover{
     background-color:palevioletred ;
+    cursor: crosshair;
 }
 /*  */
 .sss{
@@ -651,38 +657,46 @@ h2{
 .__div-knows:nth-child(1):hover .html{
     opacity: 100%;
     top: -65px; 
+    cursor: crosshair;
     animation: uno 3s linear infinite;
 }
 .__div-knows:nth-child(2):hover .css{
     left: 140px;
+    cursor: crosshair;
     opacity: 100%;
     animation: dos 3s linear infinite;
 }
 .__div-knows:nth-child(3):hover .js{
     left: 0px;
     opacity:100%;
+    cursor: crosshair;
     animation: tres 3s linear infinite;
 }
 .__div-knows:nth-child(4):hover .git{
     top: -75px;
     opacity: 100%;
+    cursor: crosshair;
     animation: cuatro 3s linear infinite;
 }
 .__div-knows:nth-child(5):hover .gitb{
     right: -135px;
+    cursor: crosshair;
     opacity: 100%;
     animation: cinco 3s linear infinite;
 }
 .__div-knows:nth-child(6):hover .json{
+    cursor: crosshair;
     opacity: 100%;
     transform: scale(0.9);
 }
 .__div-knows:nth-child(7):hover .ajax{
     opacity: 100%;
+    cursor: crosshair;
     transform: scale(0.5);
     animation: siete 3s linear infinite;
 }
 .__div-knows:nth-child(8):hover .sass{
+    cursor: crosshair;
     opacity: 100%;
     transform: rotate(0deg);
 }
@@ -856,7 +870,6 @@ h2{
         transform: translate(0px, -48px);    
     }
 }
-
 /* 4 */
 .section4{
     border: 5px solid #43E5E9;
@@ -937,7 +950,6 @@ a:hover{
     margin: 0;
     background-color: rgb(7, 85, 133);
 }
-
 .__bio-p{
     width: 70%;
     margin: auto;
@@ -1011,23 +1023,23 @@ a:hover{
         transform: translate(0px, 4px );
     }
 }
-
 @media screen and (max-width: 555px) {
     *{
         max-width: 100vh;
-    }
+    }  
     body{
         background-color: #000000;
+        min-width: 25%;
         overflow-x: hidden;
-        min-width: 100vh;
     }
     .down, .up{
         display: none;
     }
     .section1{
+    overflow: hidden;
     border: 5px solid #43E5E9;
     color: #43E5E9;
-    width: 48%;
+    width: 50%;
     min-height: 130pc;
     padding: 10px;
     margin: 0;
@@ -1069,7 +1081,7 @@ a:hover{
         height: 65px;
         font-size: 45px;
         left:50%;
-        top: 600px;
+        top: 777px;
         padding: 10px;
     }
     .content > a {
@@ -1077,12 +1089,14 @@ a:hover{
         color: rgb(7, 85, 133);
         font-size: 25px;
         top: -35px;
-        left:10%;
+        left:25%;
         z-index: 3;
     }
     .content > .nav--div{
         width: 200px;
-        z-index: 3;
+        z-index: 1;
+        margin-left: 40px;
+        position: absolute;
     }
     .content, .nav__div, ul{
         padding: 0%;
@@ -1111,17 +1125,17 @@ a:hover{
     }
     h2{
         text-shadow: 3px 5px 5px rgb(66, 129, 211);
-        font-size: 60px;
+        font-size: 50px;
         margin: 0;
         position: relative;
         left: -20px;
-        z-index: 1;
+        z-index: 0;
     } 
     .d3{
         display: none;
     }
     .div--content-p1{
-        font-size: 45px;
+        font-size: 35px;
         margin-left: -20px;
     }
     .div--content-p2, p{
@@ -1167,6 +1181,8 @@ a:hover{
     /*  */
     .section2{
         width: 50%;
+    overflow: hidden;
+
     }
     .section2__slide{
         width: 350px;
@@ -1185,6 +1201,8 @@ a:hover{
         min-height: 50pc;
         padding: 10px;
         margin: 0;
+    overflow: hidden;
+
     }
     .section3__div-title{
         font-size: 35px;
@@ -1297,7 +1315,7 @@ a:hover{
     .__div-knows:nth-child(8):hover{
         background-color:palevioletred ;
     }
-    /*  */
+    /*  
     .sss{
         opacity: 100%;
         width: 140px;
@@ -1319,9 +1337,10 @@ a:hover{
     }
     .js{
         position: relative;
-        left: 210px;
+        left: 250px;
         opacity: 0;
         transition: 2s;
+        background-color: #2eaeb0;
     }
     .git{
         position: relative;
@@ -1366,17 +1385,17 @@ a:hover{
         margin: auto;
         transform: rotate(45deg);
     }
-    /*  */
+      */
     .__div-knows:nth-child(1):hover .html{
         opacity: 100%;
-        top: -95px; 
+        top: -75px; 
         animation: none;
         transform: scale(0.5);
     }
     .__div-knows:nth-child(2):hover .css{
         left: 140px;
         opacity: 100%;
-        
+        top: -90px; 
         animation:none;
         transform: scale(0.5);
     }
@@ -1387,7 +1406,7 @@ a:hover{
         transform: scale(0.5);
     }
     .__div-knows:nth-child(4):hover .git{
-        top: -95px;
+        top: -80px;
         opacity: 100%;
         animation:none;
         transform: scale(0.5);
@@ -1395,6 +1414,7 @@ a:hover{
     .__div-knows:nth-child(5):hover .gitb{
         opacity: 100%;
         animation: none;
+        left: 180px;
         transform: scale(0.5);
     }
     .__div-knows:nth-child(6):hover .json{
@@ -1408,19 +1428,19 @@ a:hover{
     }
     .__div-knows:nth-child(8):hover .sass{
         opacity: 100%;
-        top: -128px; 
-        left: -148px;
+        top: -100px; 
+        left: -170px;
         transform: scale(0.4);
+        
     }
     /*  */
     .html{
         position: relative;
         top: 10px; 
-        left: 45%;
+        left: 35%;
         opacity: 100%;
         transition: 2s;
         margin: auto;
-
     }
     .css{
         position: relative;
@@ -1431,10 +1451,11 @@ a:hover{
     }
     .js{
         position: relative;
-        left: 250px;
+        left: 275px;
         opacity: 100%;
         transition: 2s;
-        top: -85px;
+        top: -70px;
+        background-color: transparent;
     }
     .git{
         position: relative;
@@ -1446,7 +1467,7 @@ a:hover{
     }
     .gitb{
         position: relative;
-        top: -110px;
+        top: -85px;
         transform: scale(0.5);
         right: 35px;
         opacity: 0%;
@@ -1454,8 +1475,8 @@ a:hover{
     }
     .json{
         position: relative;
-        top: -94px;
-        right: 70px; 
+        top: -80px;
+        right: 90px; 
         opacity: 0%;
         transition: 2s;
         margin: auto;
@@ -1463,7 +1484,7 @@ a:hover{
     }
     .ajax{
         position: relative;
-        top: -110px; 
+        top: -80px; 
         left: 100px;
         opacity: 0%;
         transition: 2s;
@@ -1475,10 +1496,10 @@ a:hover{
     }
     .sass{
         position: relative;
-        top: -128px; 
-        left: -148px;
+        top: -110px; 
+        left: -160px;
         opacity: 0%;
-        transition: 2s;
+        transition: 1s;
         margin: auto;
         transform: scale(0.4);
     }
@@ -1490,6 +1511,7 @@ a:hover{
     }
     /*  */
     .section4{
+    overflow: hidden;
         width: 50%;
     }
     .sectio4__about{
@@ -1513,6 +1535,7 @@ a:hover{
 
     /*  */
     #footer{
+    overflow: hidden;
         width: 50%;  
         height: 600px; 
     }
