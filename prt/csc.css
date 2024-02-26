@@ -405,8 +405,12 @@ h2{
     background-color: black;
     margin:40px 100px;
     box-shadow:-1px -1px 30px rgb(4, 159, 167);
-
     overflow: hidden;
+}
+.imgs-1{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
 }
 .image-paragraph{
     position: relative;
@@ -645,7 +649,7 @@ h2{
 }
 .__div-knows:nth-child(5):hover{
     cursor: crosshair;
-    background-color: orange;
+    background-color: rgb(151, 86, 255);
 }
 .__div-knows:nth-child(6){
     background-color: #cc17e000;
@@ -707,9 +711,11 @@ h2{
     transition: 2s;
     margin: auto;
 }
+/* pense que sabia git bash ghajahjahjahjhaha disque porque sabia Git p*/
+/* me dio pereza quitar el nombre gitb por bootstrap :)*/
 .gitb{
     position: relative;
-    top: -73px;
+    top: -60px;
     right: 145px;
     opacity: 0;
     transition: 2s;
@@ -1181,17 +1187,161 @@ a:hover{
     .div--content-imgs{
         height: 450px;
     }
-    .foto{
+    .foto1{
         flex: 1 0 auto;
+        width:100%;
+        height: 85%;
+        margin:40px 40px;
+    }
+    .foto{
          width:95%;
          height: 90%;
     }
+    .section2{
+        height: 57pc;
+    }
     .section2__slide{
         height: 550px;
-        margin-top: 0px;
+        margin: auto;
     }
     .slide__img{
-        margin:0px 50px 0px 50px ;
+        margin:0px 50px 0px 0px ;
+    }
+    .section3__div-title{
+        left: -15%;
+    }
+    .section3__div-p{
+        width: 100%;
+        text-align: center;
+    }
+    .section3__div-knows{
+        background-color: #7a4e4e00;
+        width: 90%;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 1300px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .__div-knows:nth-child(3){
+        background-color: #43e6e900;
+        height: 60px;  
+        transition: 2s;
+    }
+    
+    .html{
+        position: relative;
+        top: 100px; 
+        left: 35%;
+        opacity: 100%;
+        transition: 2s;
+        margin: auto;
+    }
+    .css{
+        position: relative;
+        left: 300px;
+        top: -210px; 
+        opacity: 100%;
+        transition: 2s;
+    }
+    .js{
+        position: relative;
+        left: 575px;
+        opacity: 0%;
+        transition: 2s;
+        top: -70px;
+        background-color: transparent;
+    }
+    .git{
+        position: relative;
+        top: -190px;
+        left: 80px;
+        opacity: 100%;
+        transition: 2s;
+        margin: auto;
+    }
+
+    .gitb{
+        position: relative;
+        top: -55px;
+        transform: scale(0.5);
+        right: 35px;
+        opacity: 0%;
+        transition: 1s;
+    }
+    .json{
+        position: relative;
+        top: -70px;
+        right: 120px; 
+        opacity: 0%;
+        transition: 1s;
+        transform: scale(0.5);
+    }
+    .ajax{
+        position: relative;
+        top: -100px; 
+        left: 100px;
+        opacity: 0%;
+        transition: 2s;
+        transform: scale(0.1);
+    }
+    #sasa{
+      transform: scale(0.3);
+    }
+    .sass{
+        position: relative;
+        top: -100px; 
+        left: -160px;
+        opacity: 0%;
+        transition: 1s;
+        margin: auto;
+        transform: rotate(-360deg);
+    }
+    .__div-knows:nth-child(1):hover .html{
+        opacity: 100%;
+        top: -60px; 
+        animation: none;
+        transform: scale(1);
+    }
+    .__div-knows:nth-child(2):hover .css{
+        left: 140px;
+        opacity: 100%;
+        top: -80px; 
+        animation:none;
+        transform: scale(1);
+    }
+    .__div-knows:nth-child(3):hover .js{
+        left: -30px;
+        opacity:100%;
+        animation:none;
+    }
+    .__div-knows:nth-child(4):hover .git{
+        top: -70px;
+        opacity: 100%;
+        animation:none;
+    }
+    .__div-knows:nth-child(5):hover .gitb{
+        opacity: 100%;
+        animation: none;
+        left: 100px;
+        transform: scale(1);
+    }
+    .__div-knows:nth-child(6):hover .json{
+        opacity: 100%;
+        transform: scale(1);
+    }
+    .__div-knows:nth-child(7):hover .ajax{
+        opacity: 100%;
+        transform: scale(0.55);
+        animation:none;
+    }
+    .__div-knows:nth-child(8):hover .sass{
+        opacity: 100%;
+        top: -135px; 
+        left: -200px;
+        transform:rotate(360deg);
     }
 
  
