@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="styleS.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    
+    <link rel="stylesheet" href="csc.css">
     <link rel="shorcut icon" href="https://cdn-icons-png.flaticon.com/128/3323/3323523.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js -->
+    <!--Quiero hacer que el texto pueda aparecer en ingles tambien-->
 </head>
 <body>
 
-<main id="app" class="app">
-        
- <div class="up"></div>
- <div class="down"></div>
- <!-- https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js -->
-    <!--Quiero hacer que el texto pueda aparecer en ingles tambien-->
+
+<div id="app" class="app">
+    <div class="up"></div>
+    <div class="down"></div>
 <!--1-->
-<section class="section1" id="seccion1"> 
+<section class="section1 contenedor" id="seccion1"> 
  <nav class="section__nav" id="seccion1__nav">
       <a href="https://upyy.netlify.app/" target="_blank" class="nav__name">UPYY</a>
+      <!-- aqui el bonton para el dark mode-->
+      <div class="darkLight">B/W</div>
       <div class="separacion"></div>
       <div class="content"> 
         <a href="#" class="linkA">Mas</a>
@@ -49,33 +50,36 @@
  </nav><!---->
 
  <div class="section1__div" id="seccion1__div">
-   <div class="activo" id="active">
-    activo
-   </div>
-    
-   <div class="seccion1__div--conent">  
-        <h2>Bienvenidos</h2> 
+     
+     <div class="seccion1__div--conent">  
+         <h2>Bienvenido</h2> 
          <p class="div--content-p1">Ramphys Tirana Brito</p>
-         <p>Hola que tal? me da   <br> mucho gusto que estes aqui!</p> 
+         <p>Hola que tal? me da<br> mucho gusto que estes aqui!</p> 
          <p class="div--content-p2">Soy desarrollador web </p>
-        <div class="div--content-div" id="move">front end devolop</span>
-   </div>
-   <div class="d3">aquime dio para llenar el espacio con un objeto 3D veamos si lo lograra :)</div>
-    
-   <div class="div--content-imgs">
-         <img class="imgs-1" src="imgs/IMG_2302.JPG" alt="imagen laeral1"/> 
-         <img class="imgs-2" src="imgs/IMG_0394.PNG" alt="imagen lateral2"/> 
-         <img class="imgs-3" src="imgs/IMG_E2424.JPG" alt="imagen lateral3"/> 
-   </div>
- </div>
-
- <div class="comment">
-    <p>Buscas, a alguien entuciasmado, apacionado y con ganas de aprender <br>  LO ENCONTRASTE JEJE, contactame talve este disponible para tu proximo proyecto.</p>
- </div>
+         <div class="div--content-div" id="move">front end developer</div>
+        </div>
+    <DIV class="ceo">
+        <div class="activo" id="active">Activo</div>
+        <div class="d3">aqui me dio para llenar el espacio con un objeto 3D veamos si lo lograra??? :)</div>
+    </DIV>
+   
+   
+   <div class="comment">
+       <p>Buscas, a alguien entuciasmado, apacionado y con ganas de aprender <br>  LO ENCONTRASTE JEJE, contactame talve este disponible para tu proximo proyecto.</p>
+    </div>
+    <div class="div--content-imgs">
+        <div class="foto1"><img class="imgs-1 foto" src="imgs/IMG_2302.JPG" width="30px" height="40px"  alt="imagen laeral1"/>
+            <div class="image-paragraph">Lorem.
+            At, accusantium.
+            Quis, dolorum beatae. Delectus veritatis quis dolore?</div> </div>
+          <img class="imgs-2 foto1" src="imgs/IMG_0394.PNG" width="30px" height="40px"  alt="imagen lateral2"/> 
+          <img class="imgs-3 foto1" src="imgs/IMG_E2424.JPG" width="30px" height="40px"  alt="imagen lateral3"/> 
+    </div>
+  </div>
  
-</section> <!---->
+</section>
 <!--2-->
-<section class="section2" id="seccion2">
+<section class="section2 contenedor" id="sectionn">
       <div class="section2__title" id="seccion2__title">proyectos</div>
  <div class="section2__slide" id="seccion2__slide">
       <img class="slide__img" src="https://images.pexels.com/photos/18620036/pexels-photo-18620036/free-photo-of-ciudad-cielo-arte-panorama-urbano.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"  alt="imagen de proyectos">
@@ -113,9 +117,9 @@
      <img src="imgs/png2/017-css.png" class="ico ochoe" id="ico13" alt=".">
  </div>
 
-</section><!--  -->
+</section>
 <!--3-->
-<section class="section3" id="seccion3">
+<section class="section3 contenedor" id="sectionn">
       <div class="section3__div-title" id="seccion3__div-title">Conocimientos</div>
       <div class="section3__div-p" id="seccion3__div-p">Aqui va una lista de todos mis conocimientos y por conocer.</div>
     <!--  -->
@@ -170,9 +174,9 @@
      <img src="imgs/robot1.png" class="ico diez" id="diez" alt=".">
      <img src="imgs/robot2.png" class="ico once" id="once" alt=".">
  </div>
-</section> <!--  -->
+</section>
 <!--4-->
-<section class="section4" id="seccion4">
+<section class="section4 contenedor" id="sectionn">
     <!-- acerca de mi -->
       <div class="sectio4__about" id="seccion4__about">Ramphys T. B. </div>
  <div class="_about--photo">
@@ -180,18 +184,18 @@
  </div>
  <div class="_about--paragraph">  <p>Soy un desarrollador web junior, quiero trabajar para poder empezar a adquirir mas conocimientos 
          y crecer en este mundo de la programacion. <br><br> 
-         Tengo 18, y actualmente vido en RD mi pais de origen. <br> Puedo aprender independientemente, y se que 
-         puedo  llegar a ser un buen desarrollador de software.<br>
-         puedes conocerme mas viendo mi <a href="#" class="aaa">Historia</a><br><br><b><a href="https://wa.link/36oyve" target="_blank" >Hablame!</a><b></p></div>
+         Tengo 18, y actualmente vido en RD mi pais de origen. <br> <br> Puedo aprender independientemente, y se que 
+         puedo  llegar a ser un buen desarrollador de software. <br><br>
+         puedes conocerme mas viendo mi <a href="#" class="aaa">Historia.</a><br><br><b><a href="https://wa.link/36oyve" target="_blank" >Hablame!</a><b></p></div>
  <div class="icons4" id="icons4">
      <img src="imgs/robot3.png" class="ico doce" id="doce" alt="."> 
  </div>
  <div class="icons5" id="icons5">
      <img src="imgs/codigo2.png" class="ico trece" id="trece" alt=".">
  </div>         
-</section> <!--  -->
+</section>
 <!--5-->
-<footer id="footer">
+<section class="section5 contenedor"  id="sectionn" >
  <div class="footer__bio">
          <p></p>
          <p class="__bio-p"> Joven programador amante del mundo del desarrolllo, me enfoco actualmente en el desarrollo web <strong>front end</strong>  y 
@@ -223,10 +227,9 @@
     <a href="https://upyy.netlify.app/"><img src="imgs/0003.png" alt="UPYY"></a>
 
  </div>
-</footer>
-
+</section>
 
 <script src="script.js"></script>
-</main> 
+</div> 
 </body>
 </html>

@@ -39,17 +39,21 @@ let btnDown = document.querySelector('.down')
 btnDown.addEventListener('click', function(){
    window.scrollBy({top:500, behavior: "smooth"})
 });
-
-
+// 
+const darckMOde = document.querySelector(".darkLight");
+const darckMOdenav = document.querySelector("#seccion1__nav");
+const Color =  document.getElementById('app');
+darckMOde.addEventListener('click', ()=> {
+     Color.classList.toggle("negro");
+     darckMOdenav.classList.toggle('blanco')
+});
 // Obtener el elemento div
 const move = document.getElementById("move");
-
 // Inicializar las variables para guardar la posición del mouse y del move
 let mouseX = 0;
 let mouseY = 0;
 let moveX = 0;
 let moveY = 0;
-
 // Indicar si el move está siendo arrastrado o no
 let arrastrando = false;
 
