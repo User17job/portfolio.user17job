@@ -904,12 +904,14 @@ h2{
     background-color: #fff;
     border-radius:50%;
     overflow: hidden;
+    box-shadow: 0px 0px 10px  #2eaeb0;
 }
 .foto{
  text-decoration: none;
     width: 400px;
     height: 400px;
     border-radius: 50%;
+    box-shadow: 0px 0px 10px  #2eaeb0;
 }
 a:hover{
     color: #2eaeb0;
