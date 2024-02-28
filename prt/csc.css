@@ -36,7 +36,7 @@ body::-webkit-scrollbar-thumb {
 /* aqui pondre los botones de para hacer scroll*/
 .down{
     position: fixed;
-    top: 560px;
+    bottom: 5px;
     width: 0;
     height: 0;
     border-left: 30px solid transparent;
@@ -53,7 +53,7 @@ body::-webkit-scrollbar-thumb {
 .up{
     z-index: 4;
     position: fixed;
-    top: 560px;
+    bottom: 5px;
     left: 94vw;
     width: 0;
     height: 0;
@@ -406,6 +406,7 @@ h2{
     margin:40px 100px;
     box-shadow:-1px -1px 30px rgb(4, 159, 167);
     overflow: hidden;
+    transition: 0.5s;
 }
 .imgs-1{
     width:100%;
@@ -421,6 +422,7 @@ h2{
     background-color: #0975a71d;
     display: none;
     transition: 1s;
+    text-align: center;
 }
 /* que el texto aparesca con el hover*/
 .foto1:hover >.image-paragraph{
@@ -461,11 +463,86 @@ h2{
     /*    arriba izquierda abajo derecha*/
 }
 .slide__img{
-    width: 1000px;
-    border-radius: 5px;
-    background:  #3f727300;
-    margin:0px 150px 0px 300px ;
+    position:relative;
+    width: 1500px;
+    background:  #5dd1d300;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin:150px 150px 0px 50px ;
 }
+.tenetur{
+    margin: auto;
+}
+.tenetur:hover>.infolink{
+    display: flex;
+}
+.slide_img{
+    width: 800px;
+    height: 470px;
+    background:  #5dd1d300;
+    object-fit: contain;
+    border-radius: 15px;
+    margin: auto;
+    margin:0px 150px 0px 0px ;
+}
+
+/* los link a los proyectos y codigo */
+.infolink{
+    background-color: #0e75dbbf;
+    position:relative;
+    width:50%;
+    padding: 0px 30px 0px 30px;
+    height: 50px;
+    left: 140px;
+    top: -5px;
+    display:none;
+    justify-content: center;
+    transition: 1s;
+}
+.img--link1{
+    padding: 0px 30px 0px 30px;
+    margin: 0px 10px 0px 10px;
+    width: 20%; 
+    background-color: #0e75db88;
+    text-align: center;
+    transition: 1s;
+    font-size: 20px;
+    border: 3px solid  #43e6e900;
+
+}.img--link2{
+    border: 3px solid  #43e6e900;
+    padding: 0px 30px 0px 30px;
+    margin: 0px 10px 0px 10px;
+    width:20%; 
+    background-color: #0ec0db88;
+    text-align: center;
+    transition: 1s;
+    font-size: 20px;
+}
+/* efecto con hover y active para los link */
+.img--link1:hover, .img--link2:hover{
+    background-color: #70ffae83;
+    font-weight: 600;
+    color: white;
+    border: 3px solid  #43E5E9;
+}
+.img--link1:active, .img--link2:active{
+    background-color: rgb(0, 128, 0);
+}
+.readme{
+    width: 400px;
+    height: 250px;
+    padding: 30px;
+    background-color: white;
+    color: #000000;
+    position: relative;
+    left: -300px;
+    display: none;
+}
+
+
 .section2__slide::-webkit-scrollbar{
     background-color: #00000000;
 }
@@ -1204,7 +1281,7 @@ a:hover{
         margin: auto;
     }
     .slide__img{
-        margin:0px 50px 0px 0px ;
+        margin:25px 50px 0px 0px ;
     }   
 .section3{
     height: 100pc;
