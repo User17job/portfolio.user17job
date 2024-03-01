@@ -33,11 +33,11 @@ sr.reveal('.div--content-imgs', {
 });
 let btnUp = document.querySelector('.up')   
 btnUp.addEventListener('click', function(){
-   window.scrollBy({top:-500, behavior: "smooth"})
+   window.scrollBy({top:-640, behavior: "smooth"})
 });
 let btnDown = document.querySelector('.down')   
 btnDown.addEventListener('click', function(){
-   window.scrollBy({top:500, behavior: "smooth"})
+   window.scrollBy({top:640, behavior: "smooth"})
 });
 // 
 const darckMOde = document.querySelector(".darkLight");
@@ -94,5 +94,54 @@ move.addEventListener("mousedown", iniciarArrastre);
 document.addEventListener("mousemove", continuarArrastre);
 document.addEventListener("mouseup", terminarArrastre);
 
+document.querySelector('#active').addEventListener('click',function(){
+// Swal.fire("89898!");
 
+
+Swal.fire({
+  title: "Actually looking for a job!!!",
+  html: `
+  '<a href="https://wa.link/8a5lg8" target="_blank" class="anchor">Contact me</a>'
+`,
+  width: 500,
+  padding: "3em",
+//   color: "#716add",
+  color: "#black",
+
+  background: "#fff url(/images/trees.png)",
+//   backdrop: `
+//     rgba(0,0,123,0.4)
+//     url("/images/nyan-cat.gif")
+//     left top
+//     no-repeat
+//   `
+});
+
+
+// Swal.fire({
+//      title: "<strong>HTML <u>example</u></strong>",
+//      icon: "info",
+//      html: `
+//        You can use <b>bold text</b>,
+//        <a href="#">links</a>,
+//        and other HTML tags
+//      `,
+//      showCloseButton: true,
+//      showCancelButton: true,
+//      focusConfirm: false,
+//      confirmButtonText: `
+//        <i class="fa fa-thumbs-up"></i> Great!
+//      `,
+//      confirmButtonAriaLabel: "Thumbs up, great!",
+//      cancelButtonText: `
+//        <i class="fa fa-thumbs-down"></i>
+//      `,
+//      cancelButtonAriaLabel: "Thumbs down"
+//    });
+
+});
+
+document.querySelector('.recargar').addEventListener('click',function(){
+     window.scrollBy({top:-4500, behavior: "smooth"});
+});
 
