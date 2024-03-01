@@ -10,7 +10,7 @@ let validn = false
 let validE = false 
 let validP = false
 btn.addEventListener('click', function(e){
-    e.preventDefault();
+    // e.preventDefault();
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
     
     
@@ -32,28 +32,33 @@ btn.addEventListener('click', function(e){
         validE=true;
     }
      
-   if(pass.value.length <8){
-    validP=false;
-   }else{
-    validP=true;
-   }
+    if(pass.value.length > 8){
+        validP=true;
+    }else{
+        validP=false;
+    }
 
 if(validn === true){
     if(validE===true){
         if(validP===true){
-            Swal.fire({
-                position: "top-end",
-                icon: "success",
-                title: "Your work has been saved",
-                showConfirmButton: false,
-                timer: 1500
-              });
+            // Swal.fire({
+            //     position: "top-end",
+            //     icon: "success",
+            //     title: "Your work has been saved",
+            //     showConfirmButton: false,
+            //     timer: 1500
+            //   });
             form.reset();
         }else{alert('err in P');
-              return false}
+                e.preventDefault();  
+                // return false
+            }
     }else{alert('err in E');
-              return false}
+            e.preventDefault();    
+            // return false
+        }
 }else{alert('err in N');
-              return false}
-
+        e.preventDefault();
+        // return false
+    }
 });
