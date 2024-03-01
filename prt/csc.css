@@ -1162,7 +1162,7 @@ a:hover{
 /* 5 */
 .section5{
     border: 5px solid #43E5E9;
-    color:#34b7d1ea;
+    color:#00fbff;
     /* width: 97.5%; */
     min-height: 25pc;
     /* padding: 10px; */
@@ -1243,13 +1243,6 @@ a:hover{
         transform: translate(0px, 4px );
     }
 }
-
-
-
-
-
-
-
 /* el ancho del nav se va a modificar en el media query, */
 
 @media screen and (max-width: 555px) {

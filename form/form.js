@@ -20,10 +20,10 @@ btn.addEventListener('click', function(e){
         input.value = input.value.replace(regex, '');
     });
 
-    if (nom.value.length < 3){ 
-        validn = false;
-    }else{
+    if (nom.value.length <= 3){ 
         validn = true;
+    }else{
+        validn = false;
     } 
 
     if(!regexEmail.test(eg.value)){  
@@ -32,7 +32,8 @@ btn.addEventListener('click', function(e){
         validE=true;
     }
      
-    if(pass.value.length > 8){
+    //last name :D
+    if(pass.value.length >= 3){
         validP=true;
     }else{
         validP=false;
