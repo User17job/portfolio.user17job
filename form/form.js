@@ -41,14 +41,14 @@ btn.addEventListener('click', function(e){
 if(validn === true){
     if(validE===true){
         if(validP===true){
-            // Swal.fire({
-            //     position: "top-end",
-            //     icon: "success",
-            //     title: "Your work has been saved",
-            //     showConfirmButton: false,
-            //     timer: 1500
-            //   });
-            form.reset();
+             Swal.fire({
+                 position: "top-end",
+                 icon: "success",
+                 title: "Your work has been saved",
+                 showConfirmButton: false,
+                 timer: 1500
+               });
+            // form.reset();
         }else{alert('err in P');
                 e.preventDefault();  
                 // return false
