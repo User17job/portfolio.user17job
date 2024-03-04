@@ -64,7 +64,6 @@ function iniciarArrastre(e) {
   mouseY = e.clientY;
   moveX = parseInt(move.style.left) || 0;
   moveY = parseInt(move.style.top) || 0;
-
   // Activar el arrastre
   arrastrando = true;
 }
