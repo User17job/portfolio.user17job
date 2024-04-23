@@ -10,12 +10,24 @@ body::-webkit-scrollbar {
     width: 15px;               /* width of the entire scrollbar */
 }
 body::-webkit-scrollbar-track {
-    background:#43E5E9;        /* color of the tracking area */
+    background: #018058;        /* color of the tracking area */
 }
 body::-webkit-scrollbar-thumb {
-    background-color:  #43E5E9;    /* color of the scroll thumb */
+    background-color:  #29ffbb;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 4px solid  rgb(7, 85, 133);  /* creates padding around scroll thumb */
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -3;
+}
+.background>img{
+    width: 100%;
+    height: 100vh;
+    transition: 1s;
 }
 /*  */
 .app{
@@ -23,16 +35,16 @@ body::-webkit-scrollbar-thumb {
     width: 99.4%; 
     left: 0.1%;
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.989);
+    background-color: rgba(21, 63, 63, 0);
     border: 2px solid black ;
     overflow: hidden;
     border-radius: 5px;
     transition: 2s;
 }
 .anchor{color: #000000;}
-.anchor:hover{color: #00bdc0;}
+.anchor:hover{color: #29ffbb;}
 .negro{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
 /* aqui pondre los botones de para hacer scroll*/
 .down{
@@ -71,13 +83,10 @@ body::-webkit-scrollbar-thumb {
 /* aqui quiero poner las dimenciones de los contenedores en un solo selector*/
 .contenedor{
     width: 98.3%;
-    /*  */
     padding: 0.5%;
-    /*  */
     background-color: rgba(240, 248, 255, 0);
     overflow: hidden;
-    border: 5px solid #43E5E9;
-    color: #43E5E9;
+    color:   #29ffbb;
 }
 /* enpezamos con la primera seccion*/
 .section1{
@@ -186,7 +195,7 @@ a{
 /* el nav y sus estilos junto con el de sus hijos */
 .section__nav{
     margin: 0px;
-    background-color:  #43E5E9;
+    background-color:   #29ffbb;
     width: 99%;
     padding: 5px;
     position:relative;
@@ -194,8 +203,20 @@ a{
     transition: 2s;
 }
 .blanco{
-    background-color: rgb(145, 236, 242);
+    background-color:   #64f0ffbe;
     color: #000000;
+}
+.infolink
+#ico{
+    position: absolute;
+    left: 40%;
+}
+.ico1{
+    display: block;
+}
+
+.ico2{
+    display: none;
 }
 .nav__name{
     font-size: 25px;
@@ -223,7 +244,7 @@ a{
 }
 .darkLight:hover{
     cursor: pointer;
-    border: 3px solid white;
+    border: 3px solid rgb(214, 251, 247);
 }
 /*  | */
 .separacion{
@@ -281,7 +302,7 @@ li{
     z-index: 1;
 }
 li:hover{
-    background-color: #43E5E9;
+    background-color:#29ffbb;
     z-index: 3;
 }
 /* el titulo de bienvenido */
@@ -313,7 +334,7 @@ h2{
     height: 40px;
     padding: 10px;
     border-radius: 5px;
-    border: 2px solid #43E5E9;
+    border: 2px solid #29ffbb;
     font-size: 25px;
     box-shadow: 2px 5px 5px rgb(98, 152, 233) ;
     top: -230px;
@@ -357,12 +378,12 @@ h2{
 } 
 #active:hover{
     color: rgb(7, 85, 133);
-    background-color: #43E5E9;
+    background-color:#29ffbb;
 }
 .d3{
     position: relative;
     width: 60%;
-    background-color: #43E5E9;
+    background-color: #3fbc95;
     height: 84.2px;
     color: black;
     overflow: hidden;
@@ -391,21 +412,6 @@ h2{
 }
 
 @keyframes change {
-    /* 0%{margin-top: 0px;}
-    20%{margin-top: 0px;}
-    
-    30%{margin-top: -12.2%;}
-    40%{margin-top: -12.2%;}
-    
-    50%{margin-top: -24.5%;}
-    60%{margin-top: -24.5%;}
-    
-    70%{margin-top: -36.7%;}
-    80%{margin-top: -36.7%;}
-
-    90%{margin-top: -49%;}
-    100%{margin-top: -49%;} */
-
     0%{margin-top: 0px;}
     20%{margin-top: 0px;}
     
@@ -460,7 +466,7 @@ h2{
     border-radius: 50%;
     background-color: black;
     margin:40px 100px;
-    box-shadow:-1px -1px 30px rgb(4, 159, 167);
+    box-shadow:-1px -1px 30px rgb(5, 120, 126);
     overflow: hidden;
     transition: 0.5s;
 }
@@ -488,9 +494,9 @@ h2{
 /* 2 */
 .section2{
     margin-top: 0px;
-    border: 5px solid   #43E5E9;
+    /* border: 5px solid   #43E5E9; */
     height: 65pc;
-    color: #43E5E9;
+    color: #61f1c3;
 }
 .section2__title{
     width: 250px;/*250*/
@@ -507,13 +513,13 @@ h2{
     margin: auto;
     background:  #43e6e900;
     width: 90%;
-    border:0.2px solid  #43E5E9;
+    border:0.2px solid  #29ffbb;
     position: relative;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
     height:800px;
-    box-shadow: #1e6c7d 0px 0px 25px;
+    box-shadow: #1e7d6fa9 0px 0px 25px;
     border-radius: 10px;
 /*margin:   0px    0px      0px    0px; */
     /*    arriba izquierda abajo derecha*/
@@ -546,7 +552,7 @@ h2{
 
 /* los link a los proyectos y codigo */
 .infolink{
-    background-color: #0e75dbbf;
+    background-color: #0edbb5bf;
     position:relative;
     width:50%;
     padding: 0px 30px 0px 30px;
@@ -561,7 +567,7 @@ h2{
     padding: 0px 30px 0px 30px;
     margin: 0px 10px 0px 10px;
     width: 20%; 
-    background-color: #0e75db88;
+    background-color: #0edbb988;
     text-align: center;
     transition: 1s;
     font-size: 20px;
@@ -572,20 +578,20 @@ h2{
     padding: 0px 30px 0px 30px;
     margin: 0px 10px 0px 10px;
     width:20%; 
-    background-color: #0ec0db88;
+    background-color: #02d8d597;
     text-align: center;
     transition: 1s;
     font-size: 20px;
 }
 /* efecto con hover y active para los link */
 .img--link1:hover, .img--link2:hover{
-    background-color: #70ffae83;
+    background-color: #1cab9f83;
     font-weight: 600;
     color: white;
-    border: 3px solid  #43E5E9;
+    border: 3px solid #29ffbb;
 }
 .img--link1:active, .img--link2:active{
-    background-color: rgb(0, 128, 0);
+    background-color: #1cab9f83;
 }
 .readme{
     width: 400px;
@@ -682,8 +688,7 @@ h2{
 /* seccion 3 con su layout */
 
 .section3{
-    border: 5px solid #43E5E9;
-    color: #43E5E9;
+    color:#76f9d0;
     height: 55pc;
     margin: 0;
 }
@@ -1003,7 +1008,7 @@ h2{
     transition: 1s;
 }
 .willknows-:hover{
-    background-color: #43E5E9;
+    background-color: #29ffbb;
     color:  rgb(7, 85, 133);
     font-size: 25px;
 }
@@ -1119,7 +1124,7 @@ h2{
     border-radius: 50%;
 }
 a:hover{
-    color: #2eaeb0;
+    color: #1cab9f83;
 }
 ._about--paragraph{
     width: 400px;
@@ -1130,7 +1135,7 @@ a:hover{
     font-size: 20px;
 }
 .aaa{
-    color: #43E5E9;
+    color: #43e9c2;
 }
 .icons4{
     position: relative;
@@ -1160,13 +1165,10 @@ a:hover{
 }
 /* 5 */
 .section5{
-    border: 5px solid #43E5E9;
-    color:#00fbff;
-    /* width: 97.5%; */
+    color:#2cbdb183;
     min-height: 25pc;
-    /* padding: 10px; */
     margin: 0;
-    background-color: rgb(7, 85, 133);
+    background-color: rgb(16, 84, 73);
 }
 .__bio-p{
     width: 70%;
@@ -1217,12 +1219,12 @@ a:hover{
     position: relative;
     left: 70%;
     top: 10px;
-    box-shadow:3px 4px 5px #0975a7;
+    box-shadow:3px 4px 5px #09a7a2;
     transition: 0.5s;
 }
 .miniSection > a > img:hover{
     transform: scale(1.2);
-    box-shadow:-3px -4px 5px #0975a7;
+    box-shadow:-3px -4px 5px #09a7a2;
 }
 @keyframes catorceM {
     0%{
@@ -1241,6 +1243,11 @@ a:hover{
     }100%{
         transform: translate(0px, 4px );
     }
+    
+}
+footer>code{
+    margin: auto;
+    margin-left: 30%;
 }
 /* el ancho del nav se va a modificar en el media query, */
 
@@ -1510,10 +1517,5 @@ a:hover{
     .miniSection > a > img{
         left: 50%;
         top: -10px;
-}
-
- 
-}
-
-
-
+    } 
+ }
