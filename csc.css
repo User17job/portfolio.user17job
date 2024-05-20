@@ -1,3 +1,5 @@
+
+/* typescript */
 body{
     margin: 0;
     padding: 0px;
@@ -18,6 +20,7 @@ body::-webkit-scrollbar-thumb {
     border: 4px solid  rgb(7, 85, 133);  /* creates padding around scroll thumb */
 }
 
+/* image-paragraph */
 .background{
     width: 100%;
     height: 100vh;
@@ -112,6 +115,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 3;
 
 }
+
 @keyframes peraAnimacion {
     0%{
         transform: translate(0px, 0px);
@@ -475,16 +479,19 @@ h2{
     height: 100%;
     border-radius: 50%;
 }
+ajax
 .image-paragraph{
     position: relative;
-    width: 370px;
+    width: 410px;
     height: 100px;
     top: -140px;
-    left: 30px;
+    left: 10px;
     background-color: #0975a71d;
     display: none;
     transition: 1s;
     text-align: center;
+    font-size: 25px;
+    color: #02b37b;
 }
 /* que el texto aparesca con el hover*/
 .foto1:hover >.image-paragraph{
@@ -862,7 +869,7 @@ h2{
     margin: auto;
     transform: scale(3);
 }
-.ajax{
+.typescript{
     position: relative;
     top: -100px; 
     left: 0px;
@@ -872,7 +879,7 @@ h2{
   transform: scale(0);
 }
 #sasa{
-  transform: scale(0.4);
+  transform: scale(.4);
 }
 .sass{
     position: relative;
@@ -918,10 +925,10 @@ h2{
     opacity: 100%;
     transform: scale(0.9);
 }
-.__div-knows:nth-child(7):hover .ajax{
+.__div-knows:nth-child(7):hover .typescript{
     opacity: 100%;
     cursor: crosshair;
-    transform: scale(0.5);
+    transform: scale(0.3);
     animation: siete 3s linear infinite;
 }
 .__div-knows:nth-child(8):hover .sass{
@@ -1419,7 +1426,8 @@ footer>code{
         transition: 1s;
         transform: scale(0.5);
     }
-    .ajax{
+    /* typescript */
+    .typescript{
         position: relative;
         top: -100px; 
         left: 100px;
@@ -1472,7 +1480,7 @@ footer>code{
         opacity: 100%;
         transform: scale(1);
     }
-    .__div-knows:nth-child(7):hover .ajax{
+    .__div-knows:nth-child(7):hover .typescript{
         opacity: 100%;
         transform: scale(0.55);
         animation:none;
@@ -1518,9 +1526,6 @@ footer>code{
         left: 50%;
         top: -10px;
 }
-
- 
 }
-
 
 
