@@ -1,4 +1,3 @@
-// alert("actully in process");
 window.sr = ScrollReveal();
 sr.reveal('.section1', {
     duration: 1000,
@@ -49,7 +48,7 @@ const Color =  document.getElementById('app');
 const backg1 =document.getElementById("back1")
 const backg2 =document.getElementById("back2")
 let chc=1
-
+cambio();
 darckMOde.addEventListener('click', cambio)
 function cambio() {
      if(chc===1){
@@ -130,36 +129,9 @@ Swal.fire({
   color: "#black",
 
   background: "#fff url(/images/trees.png)",
-//   backdrop: `
-//     rgba(0,0,123,0.4)
-//     url("/images/nyan-cat.gif")
-//     left top
-//     no-repeat
-//   `
 });
-// Swal.fire({
-//      title: "<strong>HTML <u>example</u></strong>",
-//      icon: "info",
-//      html: `
-//        You can use <b>bold text</b>,
-//        <a href="#">links</a>,
-//        and other HTML tags
-//      `,
-//      showCloseButton: true,
-//      showCancelButton: true,
-//      focusConfirm: false,
-//      confirmButtonText: `
-//        <i class="fa fa-thumbs-up"></i> Great!
-//      `,
-//      confirmButtonAriaLabel: "Thumbs up, great!",
-//      cancelButtonText: `
-//        <i class="fa fa-thumbs-down"></i>
-//      `,
-//      cancelButtonAriaLabel: "Thumbs down"
-//    });
 });
 
 document.querySelector('.recargar').addEventListener('click',function(){
      window.scrollBy({top:-4500, behavior: "smooth"});
 });
-
